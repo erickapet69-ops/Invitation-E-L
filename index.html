@@ -3146,7 +3146,8 @@ var qrcode = function() {
       <div class="fm-who" id="footer-last-who"></div>
     </div>
     <div class="fmono">E &amp; L</div>
-    <div class="fnote">Avec amour, Éric &amp; Lorie</div>
+    <div class="fnote">Nous avons hâte de vivre ce moment avec vous.Éric &amp; Lorie</div>
+    <div class="fnote">Éric &amp; Lorie</div>
   </footer>
 
 </div>
@@ -3306,7 +3307,7 @@ var qrcode = function() {
     var box = document.getElementById('qr-box');
     box.innerHTML = '';
     var seatText = seatNumber ? (' | Siège n°' + seatNumber) : '';
-    var payload = "MARIAGE ÉRIC & LORIE | Invité: " + name + seatText + " | 12/12/2026 16h00 | Espace Talino, N'Djamena";
+    var payload = "MARIAGE ÉRIC & LORIE | Invité: " + name + seatText + " | 12/12/2026 16h00 | Espace Talino Manu, N'Djamena";
     try{
       var qr = qrcode(0, 'M');
       qr.addData(payload);
