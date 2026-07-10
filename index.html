@@ -3253,7 +3253,10 @@ var qrcode = function() {
       img.style.height = '176px';
       img.alt = 'QR code invité';
       box.appendChild(img);
-    }catch(err){ console.error('QR error', err); }
+    }catch(err){
+      console.error('QR error', err);
+      box.innerHTML = '<div style="color:#c8a24d;font-size:10px;line-height:1.6;padding:20px;max-width:176px;">QR indisponible : ' + (err && err.message ? err.message : 'erreur inconnue') + '</div>';
+    }
     setTimeout(function(){
       section.classList.add('reveal');
       io.observe(section);
